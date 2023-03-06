@@ -1,8 +1,8 @@
-package mx.itson.edu.practica6_popcornfactiry
+package mx.edu.itson.popcornfactory
 
 import android.content.Intent
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
 import android.widget.Button
 
 class MainActivity : AppCompatActivity() {
@@ -13,9 +13,8 @@ class MainActivity : AppCompatActivity() {
         val button: Button = findViewById(R.id.botonP)
 
         button.setOnClickListener {
-            var intent: Intent = Intent(this, Catalogo::class.java)
+            var intent: Intent = Intent( this, Catalogo::class.java)
             startActivity(intent)
         }
-
     }
 }

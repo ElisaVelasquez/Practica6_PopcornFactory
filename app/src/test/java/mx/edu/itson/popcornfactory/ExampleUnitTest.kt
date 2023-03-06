@@ -1,7 +1,8 @@
-package mx.itson.edu.practica6_popcornfactiry
+package mx.edu.itson.popcornfactory
 
-import org.junit.Assert.assertEquals
 import org.junit.Test
+
+import org.junit.Assert.*
 
 /**
  * Example local unit test, which will execute on the development machine (host).

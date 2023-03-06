@@ -1,2 +1,2 @@
-# Practica6_PopcornFactiry
- AppsMoviles
+# Practica6_PopcornFactory
+AppsMoviles

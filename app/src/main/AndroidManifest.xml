@@ -9,13 +9,13 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Practica6_PopcornFactiry"
+        android:theme="@style/Theme.PopCornFactory"
         tools:targetApi="31">
         <activity
             android:name=".Catalogo"
             android:exported="false" />
         <activity
-            android:name=".detalle_pelicula"
+            android:name=".Detalle_pelicula"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
