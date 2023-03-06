@@ -1,6 +1,5 @@
 package mx.edu.itson.popcornfactory
 
-import android.annotation.SuppressLint
 import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -46,20 +45,20 @@ class Catalogo : AppCompatActivity() {
 
     class PeliculaAdapter:  BaseAdapter {
 
-        var productos = ArrayList<Pelicula>()
+        var peliculas = ArrayList<Pelicula>()
         var contexto: Context? =null
 
         constructor(contexto: Context, pelicula: ArrayList<Pelicula>){
-            this.productos = pelicula
+            this.peliculas = pelicula
             this.contexto=contexto
         }
 
         override fun getCount(): Int {
-            return productos.size
+            return peliculas.size
         }
 
         override fun getItem(p0: Int): Any {
-            return productos[p0]
+            return peliculas[p0]
         }
 
         override fun getItemId(p0: Int): Long {
@@ -67,7 +66,7 @@ class Catalogo : AppCompatActivity() {
         }
 
         override fun getView(p0: Int, p1: View?, p2: ViewGroup?): View {
-            var prod = productos[p0]
+            var prod = peliculas[p0]
             var inflator=contexto!!.getSystemService(Context.LAYOUT_INFLATER_SERVICE)as LayoutInflater
             var vista=inflator.inflate(R.layout.pelicula,null)
 
@@ -82,7 +81,7 @@ class Catalogo : AppCompatActivity() {
                 intento.putExtra("titulo",prod.titulo)
                 intento.putExtra("imagen",prod.image)
                 intento.putExtra("header",prod.header)
-                intento.putExtra("sinopsis",prod.sipnosis)
+                intento.putExtra("sinopsis",prod.sinopsis)
                 contexto!!.startActivity(intento)
             }
             return vista
