@@ -1,9 +1,9 @@
 package mx.edu.itson.popcornfactory
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -13,7 +13,7 @@ class MainActivity : AppCompatActivity() {
         val button: Button = findViewById(R.id.botonP)
 
         button.setOnClickListener {
-            var intent: Intent = Intent( this, Catalogo::class.java)
+            var intent: Intent = Intent(this, Catalogo::class.java)
             startActivity(intent)
         }
     }
